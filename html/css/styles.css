@@ -46,7 +46,7 @@ font-weight: 500;
   background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,70));
 }
 
-.saiba-mais{
+.pointer{
   cursor: pointer;
 }
 
@@ -104,6 +104,8 @@ font-weight: 500;
   .botao-compra-pagamento{
     margin-left: 13rem!important;
   }
+
+
 
 
 
