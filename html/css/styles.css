@@ -5,6 +5,11 @@
     color: #fff;
   }
 
+  .box-contato{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+
 
   .footer {
     background: rgb(122, 122, 150);
@@ -19,23 +24,17 @@
     font-weight: 500;
   }
 
-  .formularios{
-    margin: 30px 0;
-  }
-
  .esqueceu{
     margin: 30px 0;
 
  }
 
- .botao-compra {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
+ .botao-compra-pacotes {
     width: 100%;
-    font-size: 18px;
   }
+
+
+  .botao-compra-pagamento{
+    margin-left: 13rem!important;
+  }
+

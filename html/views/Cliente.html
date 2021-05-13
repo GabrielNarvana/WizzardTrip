@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/img-styles.css">
+    <link rel="stylesheet" href="../css/plugins.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
@@ -11,32 +13,88 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-              <img src="/docs/4.6/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-              Wizzard Trip
-            </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item ">
-              <a class="nav-link" href="#">Sobre</a>
+      <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="/docs/4.6/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            Wizzard Trip
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Sobre <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pacotes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Entrar</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Cadastre-se</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Pacotes <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Entrar</a>
-            </li>
-          </ul>
-        </div>
-        </div>
-    </nav>
+        </ul>
+      </div>
+      </div>
+  </nav>
     
     <div class="container">
-        
+      <div class="row mt-5 mb-5">
+        <div class="col-sm-6">
+          <div class="d-flex flex-row align-items-center">
+            <div class="d-flex flex-column align-items-center">
+              <h5>Nome do usuario</h5>
+              <img src="../img/perfil.png" class="img-perfil border-0 rounded-3" alt="...">
+              <img src="../img/edit.png" class="img-edit hvr-grow  border-0" alt="...">
+            </div>
+            <div class="flex-column p-3">
+              <h6 class="mb-3"> <img src="../img/place.png" class="img-icon border-0 rounded-3" alt="..." />Endereço, N</h6>
+              <h6 class="mb-3"> <img src="../img/mail.png" class="img-icon border-0 rounded-3" alt="..." />email@dominio.com</h6>
+              <h6 class="mb-3"> <img src="../img/phone.png" class="img-icon border-0 rounded-3" alt="..." />(11) 98765-4321</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 text-right">
+            <h4 class="mb-3">Sobre seu plano</h4>
+            <h6 class="mb-3">Plano atual: Prata</h6>
+            <h6 class="mb-3">Ativo<img src="../img/check.png" class="img-icon border-0 rounded-3" alt="..." /></h6>
+            <h6 class="mb-3">Atualize seu plano<img src="../img/update.png" class="img-icon border-0 rounded-3" alt="..." /></h6>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-sm-6">
+          <h4 class="mb-3">Confira alguns lugares já visitados</h4>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Viagem São Paulo</h5>
+                <small>3 dias atrás</small>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Viagem Rio de janeiro</h5>
+                <small class="text-muted">Em 01/01/2020</small>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Viagem Curitiba</h5>
+                <small class="text-muted">Em 01/06/2019</small>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="col-sm-6 text-right">
+          <h4 class="mb-3">Informações de pagamento</h4>
+          <h6 class="mb-3">Atualize a forma de pagamento<img src="../img/pay.png" class="img-icon border-0 rounded-3" alt="..." /></h6>
+          <h6 class="mb-3">Veja o Historico de cobrança<img src="../img/wallet.png" class="img-icon border-0 rounded-3" alt="..." /></h6>
+        </div>
+      </div>
     </div>
 
    
@@ -50,8 +108,10 @@
                 <div class="col-sm-4">
                 </div>
                 <div class="col-sm-4">
-                    <p>FACEBOOK</p>
-                    <p>INSTAGRAM</p>
+                  <div class="d-flex flex-row">
+                    <p class="m-3">FACEBOOK</p>
+                    <p class="m-3">INSTAGRAM</p>
+                  </div>
                 </div>
             </div>
         </div>

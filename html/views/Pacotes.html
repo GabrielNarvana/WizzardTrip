@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/img-styles.css">
+    <link rel="stylesheet" href="../css/plugins.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
@@ -11,68 +13,103 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-              <img src="/docs/4.6/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-              Wizzard Trip
-            </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item ">
-              <a class="nav-link" href="#">Sobre</a>
+      <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="/docs/4.6/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            Wizzard Trip
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Sobre <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pacotes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Entrar</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Cadastre-se</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Pacotes <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Entrar</a>
-            </li>
-          </ul>
-        </div>
-        </div>
-    </nav>
+        </ul>
+      </div>
+      </div>
+  </nav>
 
+    <div class="container">
 
     <div class="card-group">
         <div class="card">
-          <img src="../img/plano-1.png" class="card-img-top" alt="...">
+          <img src="../img/plano-1.png" class="card-img-top img-pacote" alt="...">
           <div class="card-body">
             <h5 class="card-title">Plano Bronze(dadinho)</h5>
-            <p class="card-text">Calma ai, Marreco. Pega leve com o Dadinho que o moleque é do meu conceito.
-              É isso memo, moro? Também sou bicho solto</p>
+            <p class="card-text">Pega leve com o Dadinho que o moleque é do meu conceito.
+              É isso memo, moro?</p>
             <p class="card-text"><small class="text-muted">Clique aqui para saber mais</small></p>
-            <button class="botao-compra">Comprar</button>
+            <button class="btn btn-dark botao-compra-pacotes">Comprar</button>
 
           </div>
         </div>
         <div class="card">
-          <img src="../img/plano-2.jpg" class="card-img-top" alt="...">
+          <img src="../img/plano-2.jpg" class="card-img-top img-pacote" alt="...">
           <div class="card-body">
             <h5 class="card-title">Plano Prata(Jimi hendrix)</h5>
-            <p class="card-text">Me dá licença que vou beijar o céu.</p>
+            <p class="card-text">Me dá licença que vou beijar o céu. E mais descubra</p>
             <p class="card-text"><small class="text-muted">Clique aqui para saber mais</small></p>
-            <button class="botao-compra">Comprar</button>
+            <button class="btn btn-dark botao-compra-pacotes">Comprar</button>
 
           </div>
         </div>
         <div class="card">
-          <img src="../img/plano-3.jpg" class="card-img-top" alt="...">
+          <img src="../img/plano-3.jpg" class="card-img-top img-pacote" alt="...">
           <div class="card-body">
             <h5 class="card-title">Plano Ouro(Notorius Big)</h5>
             <p class="card-text">Não podemos mudar o mundo a menos que nos transformemos.</p>
             <p class="card-text"><small class="text-muted">Clique aqui para saber mais</small></p>
-            <button class="botao-compra">Comprar</button>
+            <button class="btn btn-dark botao-compra-pacotes">Comprar</button>
 
           </div>
         </div>
       </div>
 
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Bronze</th>
+              <th scope="col">Prata</th>
+              <th scope="col">Ouro</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Viagens Nacionais</th>
+              <td><img src="../img/check-planos.png" class="img-icon border-0 rounded-3" alt="..." /></td>
+              <td><img src="../img/check-planos.png" class="img-icon border-0 rounded-3" alt="..." /></td>
+              <td><img src="../img/check-planos.png" class="img-icon border-0 rounded-3" alt="..." /></td>
+            </tr>
+            <tr>
+              <th scope="row">Viagens Internacionais</th>
+              <td></td>
+              <td><img src="../img/check-planos.png" class="img-icon border-0 rounded-3" alt="..." /></td>
+              <td><img src="../img/check-planos.png" class="img-icon border-0 rounded-3" alt="..." /></td>
+            </tr>
+            <tr>
+              <th scope="row">Alimentação Inclusa</th>
+              <td></td>
+              <td></td>
+              <td><img src="../img/check-planos.png" class="img-icon border-0 rounded-3" alt="..." /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
    
 
-    <footer class="footer">
+      <footer class="footer">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-4">
@@ -81,8 +118,10 @@
                 <div class="col-sm-4">
                 </div>
                 <div class="col-sm-4">
-                    <p>FACEBOOK</p>
-                    <p>INSTAGRAM</p>
+                  <div class="d-flex flex-row">
+                    <p class="m-3">FACEBOOK</p>
+                    <p class="m-3">INSTAGRAM</p>
+                  </div>
                 </div>
             </div>
         </div>
