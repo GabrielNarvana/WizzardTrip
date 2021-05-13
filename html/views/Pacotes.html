@@ -9,31 +9,31 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <title>Wizzard Trip</title>
+    <title>Wizzard Trip | Clube de assinatura de viagens</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-light header">
       <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="/docs/4.6/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-            Wizzard Trip
+          <a class="navbar-brand hvr-grow" href="#">
+            <img src="../img/logo.png" width="200" height="55" class="d-inline-block align-top" alt="">
           </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Sobre <span class="sr-only">(current)</span></a>
+          <li class="nav-item nav-pills pr-2">
+            <a class="nav-link hvr-back-pulse branco active" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pacotes</a>
+          <li class="nav-item nav-pills pr-2">
+            <a class="nav-link hvr-back-pulse branco" href="#">Pacotes</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Entrar</a>
+          <li class="nav-item nav-pills pr-2">
+            <a class="nav-link hvr-back-pulse branco" href="#">Entrar</a>
           </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#">Cadastre-se</a>
+          <li class="nav-item nav-pills pr-2">
+              <a class="nav-link hvr-back-pulse branco" href="#">Cadastre-se</a>
             </li>
         </ul>
       </div>
@@ -49,8 +49,8 @@
             <h5 class="card-title">Plano Bronze(dadinho)</h5>
             <p class="card-text">Pega leve com o Dadinho que o moleque é do meu conceito.
               É isso memo, moro?</p>
-            <p class="card-text"><small class="text-muted">Clique aqui para saber mais</small></p>
-            <button class="btn btn-dark botao-compra-pacotes">Comprar</button>
+              <p class="card-text"><small class="text-muted">R$256,87 /mês</small></p>
+            <button class="btn btn-primary botao-compra-pacotes">Comprar</button>
 
           </div>
         </div>
@@ -59,8 +59,8 @@
           <div class="card-body">
             <h5 class="card-title">Plano Prata(Jimi hendrix)</h5>
             <p class="card-text">Me dá licença que vou beijar o céu. E mais descubra</p>
-            <p class="card-text"><small class="text-muted">Clique aqui para saber mais</small></p>
-            <button class="btn btn-dark botao-compra-pacotes">Comprar</button>
+            <p class="card-text"><small class="text-muted">R$368,87 /mês</small></p>
+            <button class="btn btn-primary botao-compra-pacotes">Comprar</button>
 
           </div>
         </div>
@@ -69,40 +69,42 @@
           <div class="card-body">
             <h5 class="card-title">Plano Ouro(Notorius Big)</h5>
             <p class="card-text">Não podemos mudar o mundo a menos que nos transformemos.</p>
-            <p class="card-text"><small class="text-muted">Clique aqui para saber mais</small></p>
-            <button class="btn btn-dark botao-compra-pacotes">Comprar</button>
+            <p class="card-text"><small class="text-muted">R$598,47 /mês</small></p>
+            <button class="btn btn-primary botao-compra-pacotes">Comprar</button>
 
           </div>
         </div>
       </div>
+    </div>
+    <div class="container">
 
         <table class="table">
           <thead>
             <tr>
               <th scope="col"></th>
-              <th scope="col">Bronze</th>
-              <th scope="col">Prata</th>
-              <th scope="col">Ouro</th>
+              <th class="bronze" scope="col">Bronze</th>
+              <th class="prata" scope="col">Prata</th>
+              <th class="ouro" scope="col">Ouro</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <th scope="row">Viagens Nacionais</th>
-              <td><img src="../img/check-planos.png" class="img-icon border-0 rounded-3" alt="..." /></td>
-              <td><img src="../img/check-planos.png" class="img-icon border-0 rounded-3" alt="..." /></td>
-              <td><img src="../img/check-planos.png" class="img-icon border-0 rounded-3" alt="..." /></td>
+              <td><img src="../img/check-planos.png" class="img-icon bronze-img border-0 rounded-3" alt="..." /></td>
+              <td><img src="../img/check-planos.png" class="img-icon prata-img border-0 rounded-3" alt="..." /></td>
+              <td><img src="../img/check-planos.png" class="img-icon ouro-img border-0 rounded-3" alt="..." /></td>
             </tr>
             <tr>
-              <th scope="row">Viagens Internacionais</th>
+              <th scope="row">Viagens Internacionais na America do Sul</th>
               <td></td>
-              <td><img src="../img/check-planos.png" class="img-icon border-0 rounded-3" alt="..." /></td>
-              <td><img src="../img/check-planos.png" class="img-icon border-0 rounded-3" alt="..." /></td>
+              <td><img src="../img/check-planos.png" class="img-icon prata-img border-0 rounded-3" alt="..." /></td>
+              <td><img src="../img/check-planos.png" class="img-icon ouro-img border-0 rounded-3" alt="..." /></td>
             </tr>
             <tr>
-              <th scope="row">Alimentação Inclusa</th>
+              <th scope="row">Viagens Internacionais no Mundo</th>
               <td></td>
               <td></td>
-              <td><img src="../img/check-planos.png" class="img-icon border-0 rounded-3" alt="..." /></td>
+              <td><img src="../img/check-planos.png" class="img-icon ouro-img border-0 rounded-3" alt="..." /></td>
             </tr>
           </tbody>
         </table>
@@ -111,7 +113,7 @@
 
       <footer class="footer">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row d-flex flex-row align-items-center">
                 <div class="col-sm-4">
                     <p>© 2020 Wizzard Trip. Todos os direitos reservados.</p>
                 </div>
@@ -119,8 +121,8 @@
                 </div>
                 <div class="col-sm-4">
                   <div class="d-flex flex-row">
-                    <p class="m-3">FACEBOOK</p>
-                    <p class="m-3">INSTAGRAM</p>
+                    <p class="rede-social m-3"><img src="../img/fb.png" class="img-social hvr-grow border-0 rounded-3" alt="..." /></p>
+                    <p class="rede-social m-3"><img src="../img/inst.png" class="img-social hvr-grow border-0 rounded-3" alt="..." /></p>
                   </div>
                 </div>
             </div>

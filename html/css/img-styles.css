@@ -11,8 +11,8 @@
   }
 
   .img-icon{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     margin-right: 5px;
     margin-left: 5px;
 
@@ -21,4 +21,25 @@
   .img-pacote{
     width: 450px;
     height: 300px ;
+  }
+
+  .img-social{
+    width: 45px;
+    height: 45px;
+    filter: brightness(2);
+  }
+
+  .bronze-img{
+    border-radius: 50px;
+    background-color: chocolate;
+  }
+
+  .prata-img{
+    border-radius: 50px;
+    background-color: dimgray;
+  }
+
+  .ouro-img{
+    border-radius: 50px;
+    background-color: gold;
   }
