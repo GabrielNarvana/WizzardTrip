@@ -10,7 +10,6 @@ button{
   border-color: #7C4DFF !important;
 }
 
-
 /* Nav */
 
 .header{
@@ -118,10 +117,6 @@ font-weight: 500;
  }
 
  /* Pacotes */
-
- .botao-compra-pacotes {
-    width: 100%;
-  }
 
   .bronze{
     color: chocolate;

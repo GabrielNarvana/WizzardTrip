@@ -29,6 +29,12 @@
     filter: brightness(5);
   }
 
+  .img-twitter{
+    width: 45px;
+    height: 45px;
+    filter: invert(100);
+  }
+
   .bronze-img{
     border-radius: 50px;
     background-color: chocolate;
