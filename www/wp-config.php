@@ -20,7 +20,7 @@
 
 // ** Configurações do MySQL - Você pode pegar estas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-define( 'DB_NAME', 'WTBase' );
+define( 'DB_NAME', 'wp_wizzard' );
 
 /** Usuário do banco de dados MySQL */
 define( 'DB_USER', 'root' );
@@ -93,3 +93,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Configura as variáveis e arquivos do WordPress. */
 require_once ABSPATH . 'wp-settings.php';
+
+set_time_limit(300);
