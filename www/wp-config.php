@@ -84,6 +84,9 @@ $table_prefix = 'wp_';
  */
 define( 'WP_DEBUG', false );
 
+define('WP_HOME',       'http://localhost/WizzardTrip/www/');
+define('WP_SITEURL',    'http://localhost/WizzardTrip/www/');
+
 /* Isto é tudo, pode parar de editar! :) */
 
 /** Caminho absoluto para o diretório WordPress. */

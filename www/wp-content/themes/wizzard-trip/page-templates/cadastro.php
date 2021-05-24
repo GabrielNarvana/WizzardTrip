@@ -16,7 +16,7 @@
     <div class="container">
         <div class="row m-5 justify-content-center">
             <div class="col-sm-6">
-                <form>
+                <!-- <form>
                     <h4>Quero ser cliente</h4>
                     <div class="form-group">
                         <label for="campoNome">Nome completo</label>
@@ -43,7 +43,10 @@
                         <input type="password" class="form-control">
                     </div>
                     <a href="../views/Entrar.html" class="btn btn-primary botao-compra-pacotes roxo">Cadastrar</a>
-                </form>
+                </form> -->
+                <?php
+                    echo do_shortcode('[forminator_form id="48"]');
+                ?>
             </div>
         </div>
     </div>

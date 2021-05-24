@@ -15,33 +15,27 @@
 
     <div class="container">
         <div class="card-group">
-            <div class="card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/rio.jpg" class="card-img-top img-pacote">
-                <div class="card-body">
-                    <h5 class="card-title">Plano Bronze</h5>
-                    <p class="card-text">Para os amantes de viagens nacionais oferecemos o que o Brasil tem de melhor desde suas praias em vários cantos do País até pontos turísticos que vai de Cristo Redentor até as cataratas do Iguaçu</p>
-                    <p class="card-text"><small class="text-muted">R$256,87 /mês</small></p>
-                    <a href="../views/Pagamento.html" class="btn btn-primary botao-compra-pacotes roxo">Comprar</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/peru.jpg" class="card-img-top img-pacote">
-                <div class="card-body">
-                    <h5 class="card-title">Plano Prata</h5>
-                    <p class="card-text">Escolher a América Latina como seu plano é garantia de encontrar lugares fascinantes. De praias a desertos, de ilhas a cidades históricas passando por sítios arqueológicos de importância histórica única.</p>
-                    <p class="card-text"><small class="text-muted">R$368,87 /mês</small></p>
-                    <a href="../views/Pagamento.html" class="btn btn-primary botao-compra-pacotes roxo">Comprar</a>
-                </div>
-            </div>
-            <div class="card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/paris.jpg" class="card-img-top img-pacote">
-                <div class="card-body">
-                    <h5 class="card-title">Plano Ouro</h5>
-                    <p class="card-text">Não tenha limites e viaje o mundo todo, seja uma viagem na Europa ou até mesmo no continente asiático, nós oferecemos o que o mundo tem de melhor para você. Com viagens inesquecíveis ao redor do mundo.</p>
-                    <p class="card-text"><small class="text-muted">R$598,47 /mês</small></p>
-                    <a href="../views/Pagamento.html" class="btn btn-primary botao-compra-pacotes roxo">Comprar</a>
-                </div>
-            </div>
+        
+            <?php
+                if ( have_rows('pacotes') ) :
+                    while ( have_rows('pacotes') ) : the_row();
+            ?>
+                        <div class="card">
+                            <img src="<?php echo get_sub_field("imagem"); ?>" class="card-img-top img-pacote">
+                            <div class="card-body">
+                                <h5 class="card-title"><?php echo get_sub_field("nome"); ?></h5>
+                                <p class="card-text"><?php echo get_sub_field("descricao"); ?></p>
+                                <p class="card-text"><small class="text-muted">R$<?php echo get_sub_field("valor"); ?> /mês</small></p>
+                                <?php 
+                                    $url = is_user_logged_in() ? home_url() . "/pagamento/?plano=" . get_sub_field("nome") . "&descricao=" . get_sub_field("descricao") . "&valor=" . get_sub_field("valor") : home_url() . "/cadastro";
+                                ?>
+                                <a href="<?php echo $url; ?>" class="btn btn-primary botao-compra-pacotes roxo">Comprar</a>
+                            </div>
+                        </div>
+            <?php
+                    endwhile;
+                endif;
+            ?>
         </div>
     </div>
     <div class="container">

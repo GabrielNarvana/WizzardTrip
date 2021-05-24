@@ -115,27 +115,27 @@ add_image_size('slide-extra-large', 2560, 749, true );*/
 
 if( function_exists('acf_add_options_page') ) {
 
-   /* @info disabled by unused*/
-    acf_add_options_page(array(
-        'page_title' => 'Opções Gerais',
-        'menu_title' => 'Opções Gerais',
-        'menu_slug'  => 'theme-general-settings',
-        'capability' => 'edit_posts',
-        'redirect'   => false,
-        'icon_url'   => 'dashicons-admin-settings',
-        'position'   => 2
+    /* @info disabled by unused*/
+    // acf_add_options_page(array(
+    //     'page_title' => 'Opções Gerais',
+    //     'menu_title' => 'Opções Gerais',
+    //     'menu_slug'  => 'theme-general-settings',
+    //     'capability' => 'edit_posts',
+    //     'redirect'   => false,
+    //     'icon_url'   => 'dashicons-admin-settings',
+    //     'position'   => 2
 
-    ));
+    // ));
 
-    acf_add_options_page(array(
-        'page_title' => 'Destaques',
-        'menu_title' => 'Destaques',
-        'menu_slug'  => 'uau-slides',
-        'capability' => 'edit_posts',
-        'redirect'   => false,
-        'icon_url'   => 'dashicons-excerpt-view',
-        'position'   => 3
-	));
+    // acf_add_options_page(array(
+    //     'page_title' => 'Destaques',
+    //     'menu_title' => 'Destaques',
+    //     'menu_slug'  => 'uau-slides',
+    //     'capability' => 'edit_posts',
+    //     'redirect'   => false,
+    //     'icon_url'   => 'dashicons-excerpt-view',
+    //     'position'   => 3
+	// ));
 
 }
 
@@ -259,3 +259,9 @@ function wp_get_menu_array($current_menu) {
 }
 
 add_filter('get_menu', 'wp_get_menu_array');
+
+add_action('wp_logout','ps_redirect_after_logout');
+function ps_redirect_after_logout(){
+    wp_redirect(home_url());
+    exit();
+}

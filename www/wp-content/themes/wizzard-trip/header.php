@@ -71,6 +71,22 @@
 					<?php
 						}
 					?>
+					<?php if ( !is_user_logged_in() ) { ?>
+							<li class="nav-item nav-pills pr-2">
+								<a class="nav-link hvr-back-pulse branco" href="<?php echo home_url(); ?>/entrar" target="">Entrar</a>
+							</li>
+							<li class="nav-item nav-pills pr-2">
+								<a class="nav-link hvr-back-pulse branco" href="<?php echo home_url(); ?>/cadastro" target="">Cadastro</a>
+							</li>
+					 <?php } else { ?>
+							<li class="nav-item nav-pills pr-2">
+								<a class="nav-link hvr-back-pulse branco" href="<?php echo home_url(); ?>/cliente" target="">Perfil</a>
+							</li>
+							<li class="nav-item nav-pills pr-2">
+								<?php wp_loginout(); ?>
+								<!-- <a class="nav-link hvr-back-pulse branco" href="" target="">Logout</a> -->
+							</li>
+					 <?php } ?>
 				</ul>
 			</div>
 		</div>

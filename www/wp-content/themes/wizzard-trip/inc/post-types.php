@@ -36,122 +36,122 @@ function ks_register_post_types(){
 
     $posttypes = array(
 
-        'empresas' => array(
+        // 'empresas' => array(
 
-            'labels' => array(
-                'name'               => __('Empresas'),
-                'singular_name'      => __('Empresa'),
-                'menu_name'          => __('Empresas'),
-                'name_admin_bar'     => __('Empresas'),
-                'add_new'            => __('Nova Empresa'),
-                'add_new_item'       => __('Nova Empresa'),
-                'new_item'           => __('Nova Empresa'),
-                'edit_item'          => __('Editar Empresa'),
-                'view_item'          => __('Ver Empresa'),
-                'all_items'          => __('Empresas'),
-                'search_items'       => __('Procurar por Empresas'),
-                'parent_item_colon'  => __('Empresas pai:'),
-                'not_found'          => __('Nenhum Empresa encontrado.'),
-                'not_found_in_trash' => __('Nenhum Empresa encontrado na lixeira.')
-            ),
-            'menu_icon' => 'dashicons-store',
-            'description' => __('Empresas'),
-            'rest_base' =>'custom/empresas',
-            'has_archive' => 'biblioteca/empresas',
-            'rewrite'     => [
-                'slug' => 'empresas',
-            ],
-            'supports'    => array('title', 'thumbnail'),
-            'show_in_rest' => false,  // @info inherited from old version
-        ),
+        //     'labels' => array(
+        //         'name'               => __('Empresas'),
+        //         'singular_name'      => __('Empresa'),
+        //         'menu_name'          => __('Empresas'),
+        //         'name_admin_bar'     => __('Empresas'),
+        //         'add_new'            => __('Nova Empresa'),
+        //         'add_new_item'       => __('Nova Empresa'),
+        //         'new_item'           => __('Nova Empresa'),
+        //         'edit_item'          => __('Editar Empresa'),
+        //         'view_item'          => __('Ver Empresa'),
+        //         'all_items'          => __('Empresas'),
+        //         'search_items'       => __('Procurar por Empresas'),
+        //         'parent_item_colon'  => __('Empresas pai:'),
+        //         'not_found'          => __('Nenhum Empresa encontrado.'),
+        //         'not_found_in_trash' => __('Nenhum Empresa encontrado na lixeira.')
+        //     ),
+        //     'menu_icon' => 'dashicons-store',
+        //     'description' => __('Empresas'),
+        //     'rest_base' =>'custom/empresas',
+        //     'has_archive' => 'biblioteca/empresas',
+        //     'rewrite'     => [
+        //         'slug' => 'empresas',
+        //     ],
+        //     'supports'    => array('title', 'thumbnail'),
+        //     'show_in_rest' => false,  // @info inherited from old version
+        // ),
 
-        'eventos' => array(
+        // 'eventos' => array(
 
-            'labels' => array(
-                'name'               => __('Eventos'),
-                'singular_name'      => __('Evento'),
-                'menu_name'          => __('Eventos'),
-                'name_admin_bar'     => __('Eventos'),
-                'add_new'            => __('Novo Evento'),
-                'add_new_item'       => __('Novo Evento'),
-                'new_item'           => __('Novo Evento'),
-                'edit_item'          => __('Editar Evento'),
-                'view_item'          => __('Ver Evento'),
-                'all_items'          => __('Eventos'),
-                'search_items'       => __('Procurar por Eventos'),
-                'parent_item_colon'  => __('Eventos pai:'),
-                'not_found'          => __('Nenhum Evento encontrado.'),
-                'not_found_in_trash' => __('Nenhum Evento encontrado na lixeira.')
-            ),
-            'menu_icon' => 'dashicons-admin-site-alt',
-            'description' => __('Eventos'),
-            'rest_base' =>'custom/eventos',
-            'has_archive' => 'biblioteca/eventos',
-            'rewrite'     => [
-                'slug' => 'eventos',
-            ],
-            'supports'    => array('title', 'editor', 'thumbnail', 'excerpt'),
-            'show_in_rest' => false,  // @info inherited from old version
-        ),
+        //     'labels' => array(
+        //         'name'               => __('Eventos'),
+        //         'singular_name'      => __('Evento'),
+        //         'menu_name'          => __('Eventos'),
+        //         'name_admin_bar'     => __('Eventos'),
+        //         'add_new'            => __('Novo Evento'),
+        //         'add_new_item'       => __('Novo Evento'),
+        //         'new_item'           => __('Novo Evento'),
+        //         'edit_item'          => __('Editar Evento'),
+        //         'view_item'          => __('Ver Evento'),
+        //         'all_items'          => __('Eventos'),
+        //         'search_items'       => __('Procurar por Eventos'),
+        //         'parent_item_colon'  => __('Eventos pai:'),
+        //         'not_found'          => __('Nenhum Evento encontrado.'),
+        //         'not_found_in_trash' => __('Nenhum Evento encontrado na lixeira.')
+        //     ),
+        //     'menu_icon' => 'dashicons-admin-site-alt',
+        //     'description' => __('Eventos'),
+        //     'rest_base' =>'custom/eventos',
+        //     'has_archive' => 'biblioteca/eventos',
+        //     'rewrite'     => [
+        //         'slug' => 'eventos',
+        //     ],
+        //     'supports'    => array('title', 'editor', 'thumbnail', 'excerpt'),
+        //     'show_in_rest' => false,  // @info inherited from old version
+        // ),
 
-		'podcast' => array(
+		// 'podcast' => array(
 
-            'labels' => array(
-                'name'               => __('Podcasts'),
-                'singular_name'      => __('Podcast'),
-                'menu_name'          => __('Podcasts'),
-                'name_admin_bar'     => __('Podcasts'),
-                'add_new'            => __('Novo Post'),
-                'add_new_item'       => __('Novo Post'),
-                'new_item'           => __('Novo Post'),
-                'edit_item'          => __('Editar Post'),
-                'view_item'          => __('Ver Post'),
-                'all_items'          => __('Posts'),
-                'search_items'       => __('Procurar por Posts'),
-                'parent_item_colon'  => __('Posts pai:'),
-                'not_found'          => __('Nenhum Post encontrado.'),
-                'not_found_in_trash' => __('Nenhum Post encontrado na lixeira.')
-			),
-			'menu_position' => 2,
-            'menu_icon' => 'dashicons-megaphone',
-            'description' => __('Podcasts'),
-            'rest_base' =>'custom/podcasts',
-            'has_archive' => 'biblioteca/podcasts',
-            'rewrite'     => [
-            	'slug' => 'podcasts/post',
-            ],
-            'supports'    => array('title', 'editor', 'thumbnail'),
-            'taxonomy'    => array(
+        //     'labels' => array(
+        //         'name'               => __('Podcasts'),
+        //         'singular_name'      => __('Podcast'),
+        //         'menu_name'          => __('Podcasts'),
+        //         'name_admin_bar'     => __('Podcasts'),
+        //         'add_new'            => __('Novo Post'),
+        //         'add_new_item'       => __('Novo Post'),
+        //         'new_item'           => __('Novo Post'),
+        //         'edit_item'          => __('Editar Post'),
+        //         'view_item'          => __('Ver Post'),
+        //         'all_items'          => __('Posts'),
+        //         'search_items'       => __('Procurar por Posts'),
+        //         'parent_item_colon'  => __('Posts pai:'),
+        //         'not_found'          => __('Nenhum Post encontrado.'),
+        //         'not_found_in_trash' => __('Nenhum Post encontrado na lixeira.')
+		// 	),
+		// 	'menu_position' => 2,
+        //     'menu_icon' => 'dashicons-megaphone',
+        //     'description' => __('Podcasts'),
+        //     'rest_base' =>'custom/podcasts',
+        //     'has_archive' => 'biblioteca/podcasts',
+        //     'rewrite'     => [
+        //     	'slug' => 'podcasts/post',
+        //     ],
+        //     'supports'    => array('title', 'editor', 'thumbnail'),
+        //     'taxonomy'    => array(
 
-                'podcasts_categories' => array(
+        //         'podcasts_categories' => array(
 
-                    'hierarchical'      => true,
-                    'labels'            => array(
-                        'name'              => __('Categorias'),
-                        'singular_name'     => __('Categoria'),
-                        'search_items'      => __('Procurar por categoria' ),
-                        'all_items'         => __('Categorias' ),
-                        'parent_item'       => __('Categoria Pai' ),
-                        'parent_item_colon' => __('Categorias Pai:' ),
-                        'edit_item'         => __('Editar Categoria' ),
-                        'update_item'       => __('Atualizar Categoria' ),
-                        'add_new_item'      => __('Nova Categoria' ),
-                        'new_item_name'     => __('Nova Categoria' ),
-                        'menu_name'         => __('Categorias' ),
-                    ),
+        //             'hierarchical'      => true,
+        //             'labels'            => array(
+        //                 'name'              => __('Categorias'),
+        //                 'singular_name'     => __('Categoria'),
+        //                 'search_items'      => __('Procurar por categoria' ),
+        //                 'all_items'         => __('Categorias' ),
+        //                 'parent_item'       => __('Categoria Pai' ),
+        //                 'parent_item_colon' => __('Categorias Pai:' ),
+        //                 'edit_item'         => __('Editar Categoria' ),
+        //                 'update_item'       => __('Atualizar Categoria' ),
+        //                 'add_new_item'      => __('Nova Categoria' ),
+        //                 'new_item_name'     => __('Nova Categoria' ),
+        //                 'menu_name'         => __('Categorias' ),
+        //             ),
 
-                    'show_ui'           => true,
-                    'show_admin_column' => true,
-                    'query_var'         => true,
-					'rewrite'           => array('slug' => 'podcasts/categorias'),
-					'show_in_rest'      => true,
-                    'rest_base'         => 'podcasts_categories'
+        //             'show_ui'           => true,
+        //             'show_admin_column' => true,
+        //             'query_var'         => true,
+		// 			'rewrite'           => array('slug' => 'podcasts/categorias'),
+		// 			'show_in_rest'      => true,
+        //             'rest_base'         => 'podcasts_categories'
 
-                ),
+        //         ),
 
-            ),
+        //     ),
 
-		),
+		// ),
 
     );
 

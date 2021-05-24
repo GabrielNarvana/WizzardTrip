@@ -16,7 +16,7 @@
     <div class="container">
         <div class="row m-5 justify-content-center">
         <div class="col-sm-6">
-            <form>
+            <!-- <form>
                 <h4>Já sou cliente</h4>
                 <div class="form-group">
                     <label for="campoEmail">Email</label>
@@ -35,7 +35,8 @@
                     <a href="../views/Cliente.html" class="btn btn-primary roxo">Entrar</a>
                     <a href="../views/Cadastro.html" class="btn btn-primary roxo">Cadastre-se</a>
                 </div>
-            </form>
+            </form> -->
+            <?php echo do_shortcode('[forminator_form id="49"]'); ?>
         </div>
         </div>
     </div>
